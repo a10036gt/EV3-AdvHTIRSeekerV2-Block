@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EditorStrings>
+	<PolyGroups ModuleName="HiTechnic IRSeekerV2">
+		<PolyGroup Name="HTIRSeekerV2Sensor" DisplayName="HiTechnic IRSeekerV2 - OFDL v5.0">
+			<Description><![CDATA[<p>Context help for PolyGroup <b>HTIRSeekerV2Sensor</b></p>]]></Description>
+			<Parameter Name="Port" DisplayName="Port"></Parameter>
+			<Parameter Name="Direction" DisplayName="Direction"></Parameter>
+			<Parameter Name="Strength" DisplayName="Strength"></Parameter>
+			<Parameter Name="Filter" DisplayName="Filter Strength Set"></Parameter>
+			<Parameter Name="DirectionLowerBound" DisplayName="Direction Lower Bound"></Parameter>
+			<Parameter Name="DirectionUpperBound" DisplayName="Direction Upper Bound"></Parameter>
+			<Parameter Name="FilterDirection" DisplayName="Filter Direction"></Parameter>
+			<Parameter Name="Channel1" DisplayName="Channel 1"></Parameter>
+			<Parameter Name="Channel2" DisplayName="Channel 2"></Parameter>
+			<Parameter Name="Channel3" DisplayName="Channel 3"></Parameter>
+			<Parameter Name="Channel4" DisplayName="Channel 4"></Parameter>
+			<Parameter Name="Channel5" DisplayName="Channel 5"></Parameter>
+			<Parameter Name="Offset1" DisplayName="Ch.1 Offset"></Parameter>
+			<Parameter Name="Offset2" DisplayName="Ch.2 Offset"></Parameter>
+			<Parameter Name="Offset3" DisplayName="Ch.3 Offset"></Parameter>
+			<Parameter Name="Offset4" DisplayName="Ch.4 Offset"></Parameter>
+			<Parameter Name="Offset5" DisplayName="Ch.5 Offset"></Parameter>
+			<Block Mode="Initialize" DisplayName="Sensor Configuration"></Block>
+			<Category Name="AC" DisplayName="AC Mode">
+				<Block Mode="ACdir" DisplayName="Direction And Strength"></Block>
+				<Block Mode="ACenhanced" DisplayName="AC All Functions"></Block>
+			</Category>
+			<Category Name="DC" DisplayName="DC Mode">
+				<Block Mode="DCdir" DisplayName="Direction And Strength"></Block>
+				<Block Mode="DCenhanced" DisplayName="DC All Functions"></Block>
+			</Category>
+		</PolyGroup>
+	</PolyGroups>
+</EditorStrings>

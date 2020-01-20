@@ -1,0 +1,18 @@
+[UPDATE]20191214
+HiTechnic IRSeekerV2 - OFDL v5.0
+Add Each Channel Strength Offset
+Add Initialize Mode
+
+[fix]20180829
+remove write iic buffer function.
+
+[ADD]20170824
+Add enhanced Dir(Sth<50,dir=0)
+
+[UPDATE]20170529
+Fix AC S1~S5 wire error.
+
+edit by OFDL HSU
+20170527
+edit by OFDL HYT
+20180829

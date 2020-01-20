@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EditorDefinitions>
+	<PolyGroups ModuleName="HiTechnic IRSeekerV2" ModuleVersion="5.0 (By OFDL Dev.)">
+		<PolyGroup Name="HTIRSeekerV2Sensor" DisplayNamePrefix="IRSeekerV2" BlockFamily="Sensor">
+			<Parameter Name="Port" CompilerDirectives="OneInputPort" Direction="Input" DefaultValue="1.1" />
+			<Parameter Name="Direction" Direction="Output" DataType="Single" Identification="Identification_dir.png" />
+			<Parameter Name="Strength" Direction="Output" DataType="Single" Identification="Identification_strength.png" />
+			<Parameter Name="Channel1" Direction="Output" DataType="Single" Identification="Identification_Channel1.png" />
+			<Parameter Name="Channel2" Direction="Output" DataType="Single" Identification="Identification_Channel2.png" />
+			<Parameter Name="Channel3" Direction="Output" DataType="Single" Identification="Identification_Channel3.png" />
+			<Parameter Name="Channel4" Direction="Output" DataType="Single" Identification="Identification_Channel4.png" />
+			<Parameter Name="Channel5" Direction="Output" DataType="Single" Identification="Identification_Channel5.png" />
+			<Parameter Name="FilterDirection" Direction="Output" DataType="Single" Identification="Identification_FilterDirection.png" />
+			<Parameter Name="Filter" Direction="Input" DataType="Single" DefaultValue="40" Identification="Identification_Filter.png" />
+			<Parameter Name="DirectionLowerBound" Direction="Input" DataType="Single" DefaultValue="3" Identification="Identification_DirectionLowerBound.png"/>
+			<Parameter Name="DirectionUpperBound" Direction="Input" DataType="Single" DefaultValue="7" Identification="Identification_DirectionUpperBound.png"/>
+			<Parameter Name="Offset1" Direction="Input" DataType="Single" DefaultValue="0" Identification="Identification_Channel1.png" />
+			<Parameter Name="Offset2" Direction="Input" DataType="Single" DefaultValue="0" Identification="Identification_Channel2.png" />
+			<Parameter Name="Offset3" Direction="Input" DataType="Single" DefaultValue="0" Identification="Identification_Channel3.png" />
+			<Parameter Name="Offset4" Direction="Input" DataType="Single" DefaultValue="0" Identification="Identification_Channel4.png" />
+			<Parameter Name="Offset5" Direction="Input" DataType="Single" DefaultValue="0" Identification="Identification_Channel5.png" />
+			<Hardware>
+				<NXTPlotColor>#ffffab34</NXTPlotColor>
+				<EV3PlotColor>#ffd46800</EV3PlotColor>
+				<EV3AutoID>52</EV3AutoID>
+				<Direction>Input</Direction>
+				<DefaultPort>1.1</DefaultPort>
+			</Hardware>
+			<Block>
+				<Mode>Initialize</Mode>
+				<Reference Type="VILib" Name="InitializeIRSeekerV2.vix" />
+				<ParameterReference Name="Port" />
+				<ParameterReference Name="Filter" />
+				<ParameterReference Name="DirectionLowerBound" />
+				<ParameterReference Name="DirectionUpperBound" />
+				<ParameterReference Name="Offset1" />
+				<ParameterReference Name="Offset2" />
+				<ParameterReference Name="Offset3" />
+				<ParameterReference Name="Offset4" />
+				<ParameterReference Name="Offset5" />
+				<HardwareModeInfo Name="HTIRSeekerV2" ID="0" Range="0,9" Unit="" />
+			</Block>
+			<Category Name="AC">
+				<Block>
+					<Mode>ACdir</Mode>
+					<Reference Type="VILib" Name="AC-IRSeekerV2DirStr.vix" />
+					<ParameterReference Name="Port" />
+					<ParameterReference Name="Direction" />
+					<ParameterReference Name="Strength" />
+					<HardwareModeInfo Name="HTIRSeekerV2" ID="0" Range="0,9" Unit="" />
+				</Block>
+				<Block>
+					<Mode>ACenhanced</Mode>
+					<Reference Type="VILib" Name="AC-IRSeekerV2DirStrH.vix" />
+					<ParameterReference Name="Port" />
+					<ParameterReference Name="FilterDirection" />
+					<ParameterReference Name="Direction" />
+					<ParameterReference Name="Strength" />
+					<ParameterReference Name="Channel1" />
+					<ParameterReference Name="Channel2" />
+					<ParameterReference Name="Channel3" />
+					<ParameterReference Name="Channel4" />
+					<ParameterReference Name="Channel5" />
+					<HardwareModeInfo Name="HTIRSeekerV2" ID="0" Range="0,9" Unit="" />
+					<PaletteInfo Weight="0.5" />
+				</Block>
+			</Category>
+			<Category Name="DC">
+				<Block>
+					<Mode>DCdir</Mode>
+					<Reference Type="VILib" Name="DC-IRSeekerV2DirStr.vix" />
+					<ParameterReference Name="Port" />
+					<ParameterReference Name="Direction" />
+					<ParameterReference Name="Strength" />
+					<HardwareModeInfo Name="HTIRSeekerV2" ID="0" Range="0,9" Unit="" />
+				</Block>
+				<Block>
+					<Mode>DCenhanced</Mode>
+					<Reference Type="VILib" Name="DC-IRSeekerV2DirStrH.vix" />
+					<ParameterReference Name="Port" />
+					<ParameterReference Name="Direction" />
+					<ParameterReference Name="Strength" />
+					<ParameterReference Name="Channel1" />
+					<ParameterReference Name="Channel2" />
+					<ParameterReference Name="Channel3" />
+					<ParameterReference Name="Channel4" />
+					<ParameterReference Name="Channel5" />
+					<HardwareModeInfo Name="HTIRSeekerV2" ID="0" Range="0,9" Unit="" />
+				</Block>
+			</Category>
+		</PolyGroup>
+	</PolyGroups>
+</EditorDefinitions>
+
