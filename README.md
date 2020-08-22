@@ -7,6 +7,6 @@ What’s EV3 Adv-HT-IRSeekerV2 Block？
 
 It is a Enhanced version of HiTechnic IRSeekerV2 Block, provide a lot of functions, and we optimized the block speed, can make program run faster.
 
-使用說明：https://www.ofdl.nctu.me/ev3-hack/adv-ht-irseekerv2-block/
+使用說明：https://ofdl.tw/ev3-hack/adv-ht-irseekerv2-block/
 
-User Guide：https://www.ofdl.nctu.me/en/ev3-hacking/adv-irseekerv2-block/
+User Guide：https://ofdl.tw/en/ev3-hacking/adv-irseekerv2-block/
