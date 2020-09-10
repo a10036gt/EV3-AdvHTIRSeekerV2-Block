@@ -1,3 +1,12 @@
+[UPDATE]20200805
+HiTechnic IRSeekerV2 - OFDL v5.1
+
+[ADD]20200725
+add frequence select mode.
+
+[FIX]20200726
+solved hung-up problem.(exclude ac all function mode)
+
 [UPDATE]20191214
 HiTechnic IRSeekerV2 - OFDL v5.0
 Add Each Channel Strength Offset

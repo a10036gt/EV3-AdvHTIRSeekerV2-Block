@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Definition>
+    <Entry Name="600Hz" DisplayName="600Hz"/>
+    <Entry Name="1200Hz" DisplayName="1200Hz"/>
+</Definition>

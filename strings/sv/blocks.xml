@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <EditorStrings>
 	<PolyGroups ModuleName="HiTechnic IRSeekerV2">
-		<PolyGroup Name="HTIRSeekerV2Sensor" DisplayName="HiTechnic IRSeekerV2 - OFDL v5.0">
+		<PolyGroup Name="HTIRSeekerV2Sensor" DisplayName="HiTechnic IRSeekerV2 - OFDL v5.1">
 			<Description><![CDATA[<p>Context help for PolyGroup <b>HTIRSeekerV2Sensor</b></p>]]></Description>
 			<Parameter Name="Port" DisplayName="Port"></Parameter>
 			<Parameter Name="Direction" DisplayName="Direction"></Parameter>
@@ -20,7 +20,10 @@
 			<Parameter Name="Offset3" DisplayName="Ch.3 Offset"></Parameter>
 			<Parameter Name="Offset4" DisplayName="Ch.4 Offset"></Parameter>
 			<Parameter Name="Offset5" DisplayName="Ch.5 Offset"></Parameter>
+			<Parameter Name="Mode" DisplayName="Mode"></Parameter>
+			<Parameter Name="Success" DisplayName="Success"></Parameter>
 			<Block Mode="Initialize" DisplayName="Sensor Configuration"></Block>
+			<Block Mode="SetMode" DisplayName="Mode"></Block>
 			<Category Name="AC" DisplayName="AC Mode">
 				<Block Mode="ACdir" DisplayName="Direction And Strength"></Block>
 				<Block Mode="ACenhanced" DisplayName="AC All Functions"></Block>

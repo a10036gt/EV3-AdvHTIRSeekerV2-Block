@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <EditorDefinitions>
-	<PolyGroups ModuleName="HiTechnic IRSeekerV2" ModuleVersion="5.0 (By OFDL Dev.)">
+	<PolyGroups ModuleName="HiTechnic IRSeekerV2" ModuleVersion="5.1 (By OFDL Dev.)">
 		<PolyGroup Name="HTIRSeekerV2Sensor" DisplayNamePrefix="IRSeekerV2" BlockFamily="Sensor">
 			<Parameter Name="Port" CompilerDirectives="OneInputPort" Direction="Input" DefaultValue="1.1" />
 			<Parameter Name="Direction" Direction="Output" DataType="Single" Identification="Identification_dir.png" />
@@ -19,6 +19,8 @@
 			<Parameter Name="Offset3" Direction="Input" DataType="Single" DefaultValue="0" Identification="Identification_Channel3.png" />
 			<Parameter Name="Offset4" Direction="Input" DataType="Single" DefaultValue="0" Identification="Identification_Channel4.png" />
 			<Parameter Name="Offset5" Direction="Input" DataType="Single" DefaultValue="0" Identification="Identification_Channel5.png" />
+			<Parameter Name="Mode" Direction="Input" DataType="Boolean" DefaultValue="False" Identification="Identification_Mode.xml" Configuration="Identification_Mode.xml" />
+			<Parameter Name="Success" Direction="Output" DataType="Boolean" Identification="Identification_OutputBoolean.png" />
 			<Hardware>
 				<NXTPlotColor>#ffffab34</NXTPlotColor>
 				<EV3PlotColor>#ffd46800</EV3PlotColor>
@@ -38,6 +40,14 @@
 				<ParameterReference Name="Offset3" />
 				<ParameterReference Name="Offset4" />
 				<ParameterReference Name="Offset5" />
+				<HardwareModeInfo Name="HTIRSeekerV2" ID="0" Range="0,9" Unit="" />
+			</Block>
+			<Block>
+				<Mode>SetMode</Mode>
+				<Reference Type="VILib" Name="SetMode.vix" />
+				<ParameterReference Name="Port" />
+				<ParameterReference Name="Mode" />
+				<ParameterReference Name="Success" />
 				<HardwareModeInfo Name="HTIRSeekerV2" ID="0" Range="0,9" Unit="" />
 			</Block>
 			<Category Name="AC">

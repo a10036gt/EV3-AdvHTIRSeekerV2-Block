@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Definition Type="Boolean">
+    <Point Value="True" Name="600Hz" ImageSuffix="_600Hz"/>
+    <Point Value="False" Name="1200Hz" ImageSuffix="_1200Hz"/>
+</Definition>
